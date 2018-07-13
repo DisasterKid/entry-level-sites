@@ -20,13 +20,12 @@
 }
 
 .person:hover, .person1:hover {
-  border-color: #f1f1f1;
+  border-color: #000000;
 }
 
 .carousel-inner img {
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%);
-  width: 100%;
+  height: 80%;
+  width: 80%;
   margin: auto;
 }
 
