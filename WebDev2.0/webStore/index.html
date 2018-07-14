@@ -5,13 +5,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1 ">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="main.css" rel="stylesheet">
-<link rel="icon" href="icon.ico" type="image/x-icon">
+<link rel="icon" href="stuff.ico" type="image/x-icon">
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--Start to the main picture carousel-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">Home</a></li>
+          <li><a href="#gundams">Gundams</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#"></a>Extras</li>
+              <li><a href="#"></a>Videos</li>
+              <li><a href="#"></a>Picutres</li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!--indicators-->
   <ol class="carousel-indicators">
@@ -72,7 +105,7 @@
   </a>
 </div>
 <!--Front page container with title-->
-<div class="container text-center">
+<div id="gundams" class="container text-center">
   <h3> Jon's Gundam Shop </h3>
   <p><em> We have all the Gundams!</em> </p>
   <br>
@@ -113,7 +146,7 @@
 </div>
 <!--Section for more information about out products-->
 <div class="bg-1">
-  <div class="container">
+  <div id="store" class="container">
     <h3 class="text-center">Gundams!</h3>
     <p class="text-center">We have a wide selction of Gundams for you to choose from.<br>
     Come stop by our store anytime.</p>
@@ -181,7 +214,7 @@
     </div>
   </div>
 </div>
-<div class="container">
+<div id="contact" class="container">
   <h3 class="text-center">Contact us</h3>
   <p class="text-center"><em>We want to hear from you</em></p>
   <div class="row test">
@@ -208,8 +241,44 @@
       </div>
     </div> 
   </div>
+  <h3 class="text-center">From our product blog</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Wing Zero</a></li>
+    <li> <a data-toggle="tab" href="#menu1">Deathscythe</a></li>
+    <li><a data-toggle="tab" href="#menu2">Tallgeese</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Wing Zero</h2>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Tallgeese</h2>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Deathscythe</h2>
+    </div>
+  </div>
 </div>
-
-
+<div id="googleMap"></div>
+<script>
+  function myMap() {
+    var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+    var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+</footer>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  })
+</script>
 </body>
 </html>
