@@ -35,9 +35,9 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#"></a>Extras</li>
-              <li><a href="#"></a>Videos</li>
-              <li><a href="#"></a>Picutres</li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Picutres</a></li>
             </ul>
           </li>
           <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -274,10 +274,24 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
+  <p>More practice with bootstrap from w3schools</p>
 </footer>
 <script>
   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+  })
+</script>
+<script>
+  $(document).ready(function(){
+    $(".navbar a, footer a[href= '#myPage']").on('click', function(event){
+      if (this.hast !== ""){
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 900, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
   })
 </script>
 </body>
