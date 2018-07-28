@@ -1,0 +1,32 @@
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkgreen;
+    background-color: black;
+    
+
+}
+
+button {
+    color: darkgreen;
+    background-color: black;
+}
+
+table, td, tbody {
+    outline-style: auto;
+    outline-color: black;
+    outline-width: 100ex;
+    table-layout: auto;
+   
+}
+
+.fun p, button {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: aliceblue;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    color: aquamarine;
+    background-color: white;
+}
