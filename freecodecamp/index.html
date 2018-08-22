@@ -3,12 +3,62 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Jon's Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    
+  <h1 class="pageTitle">Survey Form</h1>
+  <div class="body">
+      <h3 class="contentTitle"> Tell us how we can improve the website!</h3>
+      <form>
+        <div class="textGroup">
+        Name: <input type="text" name="name"><br />
+        Email: <input type="email" name="email"><br />
+        Age: <input type="text" name="age"><br />
+    </div>
+      <br />
+    <p>Please choose which job is the best fit.</p>
+      <div class="dropDown">
+         <select name="jobs">
+              <option value="Teacher">Teacher</option>
+              <option value="Student">Student</option>
+              <option value="Boss">Boss</option>
+          </select>
+      </div>
+      <div class="radioButtons">
+          <p>Which one will you choose?</p>
+          <input type="radio" name="feeling" value="good" checked> Good <br />
+          <input type="radio" name="feeling" value="OK"> OK <br />
+          <input type="radio" name="feeling" value="Bad"> Bad <br />
+      </div>
+      <br />
+      <div class="dropDown2">
+          <select name="opinion">
+            <option value="Lessons">Lessons</option>  
+            <option value="Projects">Projects</option>
+            <option value="Videos">Videos</option>    
+          </select>
+      </div>
+      <div class="checkBoxes">
+        <p>Things that you like.</p>
+        <input type="checkbox" name="choice" value="Projects"> Projects <br />
+        <input type="checkbox" name="choice" value="Training"> Training <br />
+        <input type="checkbox" name="choice" value="Tutorials"> Tutorials <br />
+        <input type="checkbox" name="choice" value="Videos"> Videos <br />
+        <input type="checkbox" name="choice" value="Lessons"> Lessons <br />
+      </div>
+      <br />
+      <div class="textArea">
+          <p>Let us know what you think.</p>
+        <textarea name="comments" placeholder="Enter your text here."></textarea>
+      </div>
+      <div class="submitButton">
+          <br />
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html> 

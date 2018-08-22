@@ -1,0 +1,18 @@
+body {
+    background-color: darkorange;
+    text-align: center;
+}
+
+.pageTitle {
+    font-family: fantasy;
+    text-align: center;
+}
+
+.contentTitle {
+    text-align: center;
+
+}
+
+.body {
+    background-color: white;
+}
