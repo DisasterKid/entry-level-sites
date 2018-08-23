@@ -1,5 +1,16 @@
+html {
+    background-color: deepskyblue;
+    min-width: 320px;
+}
+
 body {
-    background-color: darkorange;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -10,9 +21,8 @@ body {
 
 .contentTitle {
     text-align: center;
-
 }
 
-.body {
-    background-color: white;
+.textgroup {
+    text-align: center;
 }
