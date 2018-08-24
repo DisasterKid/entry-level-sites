@@ -2,12 +2,10 @@ h1 {
     text-align: center;
 }
 
-form {
-    text-align: center;
-    background-color: white;
-
+html,body {
+    background-color: aquamarine;
 }
 
-html,body {
-    background-color: aqua;
+form {
+    background-color: white;
 }
