@@ -1,0 +1,106 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Survey form</h1><br />
+    </div>
+    <form class="userInputs" id="survey-form">
+      <!--Email inout-->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email">
+      </div>  
+       <!--Name input-->
+      <div class="form-group">
+           <label for="name">Name:</label>
+           <input type="text" class="form-control" id="name">
+       </div>
+        <!--Age input-->
+       <div class="form-group">
+           <label for="number">Age:</label> 
+           <input type="text" class="form-control" id="number">
+       </div>
+       <p id="description">What is your favorite color?</p>
+        <div class="form-group">
+            <label for="color">Which color:</label>
+            <select class="form-control" id="color">
+                <option>Green</option>
+                <option>Blue</option>
+                <option>Red</option>
+                <option>Yellow</option>
+                <option>Black</option>
+            </select>
+        </div>
+            <p>How much do you like the color you have chosen?</p>
+            <div class="form-group">
+                <input type="radio" class="form-group" name="alot">A lot
+            </div>    
+            <div class="form-group">
+                <input type="radio" class="form-group" name="alittle">A little
+            </div>
+            <div class="form-group">
+                <input type="radio" class="form-group" name="soso"> So So
+            </div> 
+
+            <div class="form-group">
+                <label for="food">Which is your favorite food?</label>
+                <select class="form-control" id="food">
+                    <option>Steak</option>
+                    <option>Pizza</option>
+                    <option>Fried Chicken</option>
+                    <option>Sushi</option>
+                    <option>Ramen</option>
+                </select>
+            </div>
+            <p>What type of Web Dev learning are you looking for?</p>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> Front-end
+                </label>
+            </div>
+            <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value=""> Back-end
+                    </label>
+                </div>
+                <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value=""> Fullstack
+                        </label>
+                    </div>
+                    <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value=""> Projects
+                            </label>
+                        </div>
+                        <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value=""> Lessons
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value=""> Videos
+                                    </label>
+                                </div>
+
+            <div class="form-group">
+               <label for="comment">Leave you thoughts:</label> 
+               <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>    
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
