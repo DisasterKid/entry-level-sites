@@ -19,20 +19,33 @@
         <p id="description"> Let us know how which Gundams you like!</p>
 </div>
 <form id="survey-form" class="container">  
-<div class="row">
+<div class="row" id="textRow">
+        <!--name text-->
         <div class="col-sm-4" class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
         </div>
+        <!--email text-->
         <div class="col-sm-4" class="form-group">
-                <label for="name">Email:</label>
-                <input type="email" class="form-control" id="">
-            </div>
-            <div class="col-sm-4" class="form-group">
-                    <label for="name">Age:</label>
-                    <input type="text" class="form-control" id="">
-                </div>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <!--age text-->
+        <div class="col-sm-4" class="form-group">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" class="form-control" id="number" placeholder="Age" min="5" max="125">
+        </div>
     </div>
+    <div class="row" id="dropDown row">
+        <label for="stuff">Stuff:</label>
+        <select class="form-control" id="dropdown">
+            <option>thing</option>
+            <option>thing2</option>
+            <option>thing3</option>
+            <option>thing4</option>
+        </select>
+    </div>
+    <button type="submit">submit</button>
 </form> 
 </body>
 </html>
