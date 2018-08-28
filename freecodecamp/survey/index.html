@@ -10,13 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
 <div id="title" class="container text-center">
     <h1>Survey Form</h1>
 </div>
 <div class="container text-center">
-        <p id="description"> Let us know how which Gundams you like!</p>
+        <p id="description"> Let us know which Gundams you like!</p>
 </div>
 <form id="survey-form" class="container">  
 <div class="row" id="textRow">
@@ -37,15 +38,42 @@
         </div>
     </div>
     <div class="row" id="dropDown row">
-        <label for="stuff">Stuff:</label>
+        <div class="col-sm-6">
+        <label for="stuff">What is your favorite color?</label>
         <select class="form-control" id="dropdown">
-            <option>thing</option>
-            <option>thing2</option>
-            <option>thing3</option>
-            <option>thing4</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Orange</option>
+            <option>Red</option>
         </select>
+        </div>
+        <div class="col-sm-6">
+            <p>What do you think about cookies?</p>
+            <div class="form-check-inline">
+            <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="good"> Good
+            </label>
+            </div>
+            <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Ok"> OK
+            </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Bad"> Bad
+                </label>
+            </div>
+        </div>
     </div>
-    <button type="submit">submit</button>
+    <div class="row">
+        <div class="form-group">
+            <label for="comment">Leave us your thoughts.</label>
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+    
+    <button type="submit" id="submit">submit</button>
 </form> 
 </body>
 </html>
