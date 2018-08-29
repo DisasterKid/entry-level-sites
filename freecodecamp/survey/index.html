@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 </head>
 <body>
 <div id="title" class="container text-center">
@@ -24,12 +24,12 @@
         <!--name text-->
         <div class="col-sm-4" class="form-group">
             <label for="name" id="name-label">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <input type="text" class="form-control" id="name" required placeholder="Enter your name">
         </div>
         <!--email text-->
         <div class="col-sm-4" class="form-group">
             <label for="email" id="email-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <input type="email" class="form-control" id="email" required placeholder="Enter your email">
         </div>
         <!--age text-->
         <div class="col-sm-4" class="form-group">
@@ -51,23 +51,28 @@
             <p>What do you think about cookies?</p>
             <div class="form-check-inline">
             <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="good"> Good
+            <input type="radio" class="form-check-input" name="good" value="good"> Good
             </label>
             </div>
             <div class="form-check-inline">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="Ok"> OK
+                <input type="radio" class="form-check-input" name="Ok" value="OK"> OK
             </label>
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="Bad"> Bad
+                    <input type="radio" class="form-check-input" name="Bad" value="Bad"> Bad
                 </label>
             </div>
         </div>
     </div>
+    
     <div class="row">
-        <div class="form-group">
+        <div class="col-sm-6" class="form-check-inline">
+            
+        </div>
+
+        <div class="col-sm-6" class="form-group">
             <label for="comment">Leave us your thoughts.</label>
             <textarea class="form-control"></textarea>
         </div>
