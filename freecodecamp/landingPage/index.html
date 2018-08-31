@@ -3,12 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Jon's Gundam Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
+    <link rel="icon" href="stuff.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <!--Title heading-->
+    <div id="heading" class="jumbotron">
+    <h1>Jon's Gundam Shop</h1>
+    <p>We have all the Gundams!</p>
+    </div>
+    <!--Container for entering email-->
+    <form>
+    <div class="container" >
+    <div class="row">
+         <div class="input-group">
+            <input type="text"  class="form-control" placeholder="Your Email" id="mail" name="email" />
+            <div class="input-group-append">
+                <span class="input-group-text">@example.com</span>
+                <button type="submit" class="btn btn-outline-primary" id="emailButton">Submit</button>
+            </div>
+         </div> 
+    </div>
+</div>
+</form>
+
+
+
+
+
 </body>
 </html>
