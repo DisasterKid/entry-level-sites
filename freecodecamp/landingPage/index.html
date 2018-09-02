@@ -11,8 +11,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="navBar">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#heading">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video">Video</a>
+                         </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="#purchase">Buy</a>
+                         </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>   
+    
+    
     <!--Title heading-->
     <div id="heading" class="jumbotron">
     <h1>Jon's Gundam Shop</h1>
@@ -33,7 +60,7 @@
 </div>
 </form>
 <!--cards for product info row-->
-<div class="container">
+<div class="container" id="product">
     <div class="row">
         <div class="card-deck">
         <div class="card">
@@ -55,9 +82,52 @@
     </div>
 </div>
 
+<div class="container" id="video">
+    <div class="row bg-grey">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EBqDyAvv-_M?ecver=1"></iframe>
+          </div>
+    </div>
+</div>
 
+<div class="container" id="buy">
+    <div class="row">
+        <div class="card-deck">
+            <div class="card img-fluid" style="width:500px" >
+                <img class="card-imgage-top" src="tallgeese.jpg" alt="gundam">
+                <div class="card-img-overlay">
+                    <h4>Sandrock</h4>
+                    <p>This is the Gundam Sandrock.</p>
+                    <button type="submit" class="btn btn-outline-secondary">Purchase</button>
+                </div>
+            </div>
+            <div class="card img-fluid" style="height: 500px">
+                <img class="card-imgage-top" src="tallgeese.jpg" alt="gundam">
+                <div class="card-img-overlay">
+                    <h4>Sandrock</h4>
+                    <p>This is the Gundam Sandrock.</p>
+                    <button type="submit" class="btn btn-outline-secondary">Purchase</button>
+                </div>
+            </div>
+            <div class="card img-fluid">
+                <img class="card-imgage-top" src="tallgeese.jpg" alt="gundam">
+                <div class="card-img-overlay">
+                    <h4>Sandrock</h4>
+                    <p>This is the Gundam Sandrock.</p>
+                    <button type="submit" class="btn btn-outline-secondary">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+<footer class="text-center">
+    <a href="#heading">
+          <span class="fa fa-chevron-up" aria-hidden="true"></span>
+    </a>
+        <br />
+        <p>Head back to the top</p>
+</footer>
 
 </body>
 </html>

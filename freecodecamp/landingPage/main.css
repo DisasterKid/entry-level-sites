@@ -16,6 +16,51 @@
 
  .card {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 1%;
-    
+    margin: 1%;  
  }
+
+ .bg-grey {
+    background: #2d2d30;
+ }
+
+ footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  
+  footer a {
+    color: #f5f5f5;
+  }
+  
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }
+
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  
+  .navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+  }
+  
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important; 
+  }
+  
+  .navbar-expand .navbar-toggle {
+    border-color: transparent;
+  }
