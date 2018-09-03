@@ -64,3 +64,23 @@
   .navbar-expand .navbar-toggle {
     border-color: transparent;
   }
+
+
+#title {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+#content {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+#cardBtn {
+  text-align: center;
+  position: relative;
+  top: 200px;
+  left: 40px;
+}
