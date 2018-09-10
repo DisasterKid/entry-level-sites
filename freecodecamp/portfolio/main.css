@@ -1,3 +1,23 @@
 .grid-container {
     display: grid;
+    grid-template-columns: auto;
+    background-color: plum;
+
+}
+
+nav ul {
+    text-align: right;
+    background-color: aqua;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+
+}
+
+nav ul li a:hover {
+    
 }
