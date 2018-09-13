@@ -1,13 +1,53 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto;
-    background-color: plum;
 
 }
 
+.grid-container-body {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+
+}
+
+.grid-item {
+    text-align: center;
+}
+
+#one {
+    background-color: purple;
+}
+
+#two {
+    background-color: orange;
+}
+
+#three {
+    background-color: red;
+}
+
+#four {
+    background-color: yellow;
+}
+
+#five {
+    background-color: green;
+}
+
+#six {
+    background-color: blue;
+}
+
+
+#projectTitle {
+    text-align: center;
+}
+ #welcome-section {
+     text-align: center;
+ }
+
 nav ul {
     text-align: right;
-    background-color: aqua;
+   background-color: black;
 }
 
 nav ul li {
