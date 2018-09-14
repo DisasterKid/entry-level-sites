@@ -6,6 +6,7 @@
 
 .grid-container {
     display: grid;
+    margin: 25px 0 0 0;
     grid-template-columns: auto;
     background-color: aquamarine;
     grid-template-rows: 600px;
@@ -15,8 +16,13 @@
 .grid-container-body {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 600px 600px;
+    grid-template-rows: 200px 600px 600px;
 
+}
+
+#projectTitle {
+    grid-column: 1 / span 3;
+    background-color: beige;
 }
 
 .grid-container-end {
@@ -62,13 +68,25 @@
 }
 
  .endLinks {
-    border-style: solid;
+   /* border-style: solid;
     border-width: 5x;
     border-color: black;
-    border-radius: 100px;
+    border-radius: 100%;
     padding: 20px;
-    margin: 20px;
-    background-color: aliceblue;
+    margin: 0 35px 45px 35px;
+    background-color: aliceblue;*/
+
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 35px 45px 35px;
+    border: 2px solid #90C695;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: #e0ebe8;
+    color: #008080;
+    text-decoration: none;
 }
 
 .endLinks:hover {
@@ -99,7 +117,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: aqua;
+    color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
