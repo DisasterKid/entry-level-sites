@@ -1,15 +1,39 @@
-.grid-container {
+/*.grid-container-nav {
     display: grid;
-  
+    grid-template-columns: auto;
+    grid-template-rows: 100px;
+} */
+
+.grid-container {
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: aquamarine;
+    grid-template-rows: 600px;
 
 }
 
 .grid-container-body {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 600px 600px;;
     column-gap: 10px;
     row-gap: 10px;
 
+}
+
+.grid-container-end {
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: auto;
+    grid-template-rows: 600px;
+}
+
+.grid-container-footer {
+    display: grid;
+    background-color: chartreuse;
+    grid-template-columns: auto;
+    grid-template-rows: 100px;
 }
 
 .grid-item {
@@ -49,18 +73,28 @@
  }
 
 nav ul {
-    text-align: right;
-   background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    float: right;
 }
 
 nav ul li a {
-
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    
+    background-color: #111;
 }
