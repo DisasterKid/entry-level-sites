@@ -109,14 +109,14 @@ nav ul {
     background-color: aquamarine;
     position: fixed;
     top: 0;
+    right: 0;
 }
 
 nav ul li {
-    float: right;
+    display: inline-block;
 }
 
 nav ul li a {
-    display: block;
     color: grey;
     text-align: center;
     padding: 14px 16px;

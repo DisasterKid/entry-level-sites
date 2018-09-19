@@ -1,0 +1,11 @@
+@media screen and (max-width:300px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+#welcome-section {
+    min-height: 55vh;
+    background: grey;
+    padding-top: 45vh;
+}
