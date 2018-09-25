@@ -1,64 +1,36 @@
 body {
-    background-color: aqua;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+.leftSidebar {
+    background-color: darkgrey;
+    border-radius: 5%;
+    padding-top: 30px;
+}
 
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 1em;
-    padding-top: 300px;
 }
 
-
-.item1 {
-    background-color: red;
+li {
+    list-style: none;
 }
 
-.item2 {
-    background-color: blue;
+.information h1 {
+    text-align: center;
 }
 
-.item3 {
-    background-color: green;
+.education h1 {
+    text-align: center;
 }
 
-.item4 {
-    background-color: green;
-}
-
-.item5 {
-    background-color: red;
-}
-
-.item6 {
-    background-color: blue;
-}
-
-
-.item1:hover {
-    background-color: blue;
-}
-
-.item2:hover {
-    background-color: green;
-}
-
-.item3:hover {
-    background-color: red;
-}
-
-.item4:hover {
-    background-color: red;
-}
-
-.item5:hover {
-    background-color: blue;
-}
-.item6:hover {
-    background-color: green;
+.skills li {
+    margin: 1px;
+    padding: 1px;
 }
 
 @media screen and (max-width: 480px){
@@ -66,6 +38,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding-top: 200px;
+        
     }
 }
