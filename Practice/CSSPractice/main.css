@@ -10,21 +10,21 @@ body {
 }
 
 .leftSidebar {
-    background-color: darkgrey;
+    background-color: whitesmoke;
     border-radius: 5%;
     padding-top: 30px;
     grid-row: 1 / 3;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px red;
 }
 .information {
-    background-color: azure;
-    box-shadow: 10px 10px 10px grey;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px green;
     
 }
 
 .education {
-    background-color: aqua;
-    box-shadow: 10px 10px 10px grey;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px blue;
 }
 li {
     list-style: none;
