@@ -14,14 +14,17 @@ body {
     border-radius: 5%;
     padding-top: 30px;
     grid-row: 1 / 3;
+    box-shadow: 10px 10px 10px grey;
 }
 .information {
     background-color: azure;
+    box-shadow: 10px 10px 10px grey;
     
 }
 
 .education {
     background-color: aqua;
+    box-shadow: 10px 10px 10px grey;
 }
 li {
     list-style: none;
