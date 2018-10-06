@@ -22,8 +22,13 @@ body {
 }
 
 #progressBar {
+    margin: 10px;
     background-color: whitesmoke;
     border-radius: 13px;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 10px;
 }
 
 span {
