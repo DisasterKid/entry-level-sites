@@ -42,6 +42,16 @@ hr {
     opacity: .25;
 }
 
+ li a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
 #progressBar > div {
     background-color: darkcyan;
     color: white;
