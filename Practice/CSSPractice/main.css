@@ -26,6 +26,17 @@ body {
     border-radius: 13px;
 }
 
+span {
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+hr {
+    opacity: .25;
+}
+
 #progressBar > div {
     background-color: darkcyan;
     color: white;
