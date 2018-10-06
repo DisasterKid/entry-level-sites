@@ -1,7 +1,7 @@
 body {
     background-color: whitesmoke;
     font-family: "Roboto", sans-serif;
-    color: grey;
+    color: gray;
     text-decoration: none;
 }
 
@@ -19,6 +19,19 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     box-shadow: 10px 10px 10px gray;
+}
+
+#progressBar {
+    background-color: whitesmoke;
+    border-radius: 13px;
+}
+
+#progressBar > div {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    height: 20px;
+    border-radius: 10px;
 }
 .information {
     background-color: white;
